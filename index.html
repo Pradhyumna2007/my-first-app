@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>My test page</title>
+    </head>
+    <body>
+        <h1>Web Page</h1>
+        <p>I am <strong>pradhyumna</strong>.</p>
+        <p>currently i am bored, even though i have lot of work to do</p>
+        <img
+         src="https://i0.wp.com/picjumbo.com/wp-content/uploads/dark-portrait-of-woman-with-hair-over-her-face-free-image.jpeg?h=800&quality=80"
+         alt = "The Girl"
+         width = "100"
+         />
+        <br/> 
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNw-pMuxs_9tMP0wGKjLkg_hcqIE4FBMWoXp9tHJhM37Sa2WYpT1Y_wsI&s=10">The feather</a>
+        <br/>
+        <label for="name-input">Do you want to say <em><strong>something</strong></em>??</label>
+        <input id="name-input"/>
+        <br/>
+        <button id="greet-btn">Say Hello</button>
+        <p id="output"></p>
+        <script>
+            const btn = document.getElementById("greet-btn");
+            btn.addEventListener("click", function() {
+                const name = document.getElementById("name-input").value;
+                document.getElementById("output").textContent = "Hello, " + name + "!";
+            });
+        </script>
+    </body>
+</html>
+<!-- <p> this is my first time making a website</p> -->
